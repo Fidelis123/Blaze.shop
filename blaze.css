@@ -63,6 +63,9 @@
             background-color: rgb(54, 90, 94);
             justify-content: space-between;
         }
+            /* .Container > *{
+                border: solid red 2px;
+            } */
         /* .Container::before{
             content: '';
             position: absolute;
@@ -77,6 +80,8 @@
             z-index: -1;
         } */
         .content{
+            height: 200px;
+            min-width: 400px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -149,6 +154,78 @@
             border: none;
             width: 100px;
         }
+        .featured{
+            justify-items: center;
+            font-weight: bolder;
+            padding: 50px;
+            color: #fff;
+            background-color:  rgb(54, 90, 94);
+        }
+        .featured h1{
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+        .featured p{
+            text-transform: capitalize;
+        }
+        .featured-products .imgunder{
+            padding: 10px;
+            align-items: start;
+            margin-right: 20vh;
+        }
+        .featured-content{
+            display: flex;
+             border: #030303;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .featured-products{
+            width: 300px;
+            height: 350px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 30px;
+        }
+        .featured-products i{
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            color: yellow;
+            font-size: 10px;
+            float: left;
+
+        }
+        .featured-products img{
+             width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         @media (max-width: 991px) {
             .container {
                 flex-direction: column;
