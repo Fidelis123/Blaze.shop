@@ -1,4 +1,4 @@
-*{
+    *{
         margin: 0;padding: 0;box-sizing: border-box;list-style-type: none;
         font-family: 'poppins', sans-serif;scroll-behavior: smooth;
         }
@@ -150,7 +150,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 20px;
+            gap: 10px;
             flex-wrap: wrap;
         }
         .products .product-item{
@@ -325,7 +325,59 @@
             color: white;
             background-color: lightseagreen;
         }
+        .banner{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 40vh;
+            position: relative;
+            z-index: 10;
+            color: #fff;
+            
+        }
+        .banner::after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            filter: brightness(0.5)blur (2px);
+            background-position: center;
+            background-size: cover;
+            background-repeat: none;
+            background-image: url(./images/07b0e0fa-0dac-4c2b-99bf-ed557ebf5c49.jpg);
 
+        }
+        .banner > *{
+            z-index: 11;
+        }
+        .banner h5{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .banner h3{
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        .banner button{
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: #088178;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            transition: background-color 0.3s, color 0.3s;
+            box-shadow: 3px 3px 3px #333;
+        }
+        .banner button:hover{
+            background-color: #088178;
+            color: #fff;
+            box-shadow: 3px 3px 10px #ca9c9f;
+        }
 
 
 
@@ -347,6 +399,7 @@
                 align-items: center;
                 justify-content: center;
                 height: 100%;
+                
             }
             .content{
                 margin-left: 0;
@@ -357,6 +410,14 @@
                 width: 300px;
                 height: 100%;
                 margin-right: 0;
+            }
+            .products{
+                justify-content: center;
+                padding: 0 5%;
+            }
+            .featured-cont{
+                justify-content: center;
+                padding: 0 5%;
             }
         }
         
