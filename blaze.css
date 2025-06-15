@@ -5,7 +5,7 @@
         button{
             cursor: pointer;
         }
-        .flexcenter{
+        .flexCenter{
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -22,7 +22,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 80px;
+            height: 10vh;
             background-color: #fff;
             /* display: flex; */
             /* justify-content: space-between; */
@@ -54,7 +54,7 @@
             /* display: flex; */
             gap: 20px;
             list-style: none;
-            margin-right: 15vh;
+            margin-right: 10vh;
         }
         .navbar a{
             text-decoration: none;
@@ -77,12 +77,19 @@
             left: 20px;
         }
         .Container{
+            height: 90vh;
             display: flex;
             align-items: center;
             height: 100vh;
             background-color: rgb(54, 90, 94);
-            justify-content: space-between;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15%;
+            margin-top: 10vh;
         }
+        /* .Container > *{
+            border: solid red;
+        } */
             /* .Container > *{
                 border: solid red 2px;
             } */
@@ -105,7 +112,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-left: 15vh;
+            /* margin-left: 15vh; */
             text-align: center;
         }
         .content h1{
@@ -131,11 +138,17 @@
             background-color: lightseagreen;
             color: #fff;
         }
-        .Container .image img{
-            width: 500px;
+        /* .Container .image{
             height: 500px;
+            width: 500px;
+            min-width: 400px;
+        } */
+        .Container .image img{
+            width: 100%;
+            height: 100%;
             border-radius: 50%;
-            margin-right: 15vh;
+            border: #ca9c9f solid;
+            /* margin-right: 15vh; */
         }
         .products{
             display: flex;
@@ -145,10 +158,11 @@
             margin-top: 50px;
             box-sizing: border-box;
         }
+     
         .products .product-list{
             border: #030303;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             gap: 10px;
             flex-wrap: wrap;
@@ -229,7 +243,7 @@
         .featured-box{
             display: flex;
              border: #030303;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             gap: 20px;
             flex-wrap: wrap;
@@ -374,10 +388,129 @@
             box-shadow: 3px 3px 3px #333;
         }
         .banner button:hover{
-            background-color: #088178;
-            color: #fff;
+            background-color: #fff;
+            color: #088178;
             box-shadow: 3px 3px 10px #ca9c9f;
         }
+        .sm-banner{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            padding: 40px 0;
+        }
+        button.white {
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: 600;
+            background-color: transparent;
+            color: #fff;
+            border: #ca9c9f inset;
+            border-radius: 10px;
+            transition: background-color 0.3s, color 0.3s;
+            box-shadow: 3px 3px 3px #333;
+        }
+        .sm-banner .banner-box:hover button{
+            background-color: #fff;
+            color: #ca9c9f;
+            box-shadow: 3px 3px 10px #ca9c9f;
+            border: outset #ca9c9f;
+        }
+        .sm-banner > *{
+            border: outset #088178;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            color:  #fff;
+            min-width: 500px;
+            width: 45%; height: 40vh;
+            margin: 30px 0;
+            position: relative; z-index:10;
+            box-sizing: border-box;
+        }
+        .sm-banner .banner-box::after{
+            content:"";
+            background-image: url(./images/4e383d5c-7eb5-4276-b635-c5e500225c24.jpg);
+            width: 100%; height: 100%;
+            background-size: cover;
+            background-position: center;
+            position: absolute;top: 0;
+            z-index: -5;
+            filter: brightness(0.5);
+            box-sizing: border-box;
+        
+        }
+        .sm-banner .banner-box > *{
+            margin-left: 30px;
+        }
+        .sm-banner .banner-box h4{
+            color: #fff;
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .sm-banner .banner-box h2{
+            color: #fff;
+            font-size: 28px;
+            font-weight: 800;
+        }
+        .sm-banner span{
+            color: rgb(209, 216, 86);
+            font-size: 28px;
+            font-weight: 500;
+            padding-bottom: 15px;
+        }
+        .sm-banner .banner-box2::after{
+            background-image: url(./images/07b0e0fa-0dac-4c2b-99bf-ed557ebf5c49.jpg);
+        }
+        .banner3{
+            gap: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .banner3 .banner-box{
+            border: solid #088178 2px;
+            color: #ca9c9f;
+            min-width: 250px;
+            width: 350px;
+            height: 30vh;
+            /* padding: 0 auto; */
+            position: relative; z-index:4;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .banner3 .banner-box::after{
+            content:"";
+            background-image: url(./images/cca7065f-3ef5-45d0-aba6-ccd5ed3d5b81.jpg);
+            width: 100%;height: 100%;
+            background-size: cover;
+            background-position: center;
+            position: absolute;top: 0;
+            z-index: -1;
+            filter: brightness(0.3);
+            box-sizing: border-box;
+        }
+        .banner3 .banner-box> *{
+            margin-left: 20px;
+        }
+        .banner3 .banner-box h2{
+            font-weight: 900;
+            font-size: 22px;
+        }
+        .banner3 h3{
+            font-weight: 800;
+            font-size: 15px;
+        }
+        .banner3 .banner-box2::after{
+            background-image: url(./images/5530cd4c-4b1d-4c7a-a50c-f4c6d71d0940.jpg);
+        }
+        .banner3 .banner-box3::after{
+            background-image: url(./images/b52f9ce3-25e3-41e7-80bf-fbe2f05e8f0e.jpg);
+        }
+
+
 
 
 
@@ -393,22 +526,40 @@
 
 
 
-        @media (max-width:1140px) {
+        @media (max-width:1070px){
             .Container{
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                height: 100%;
-                
+                height: auto;
+                gap: 50px;
+                padding: 50px 0px;
             }
-            .content{
+            .Container h1{
+                font-size: 30px;
+            }
+            .Container P{
+                font-size: 15px;
+            }
+            .content{ min-width: 350px;
                 margin-left: 0;
                 text-align: center;
-                margin-top: 15vh;
+                
+            }
+            .Container .image img{
+                width: 90%;
+                height: 90%;
+                border-radius: 50%;
+                align-items: center;
+                margin-left: 5vh;
+                border: #ca9c9f solid;
+            }
+            .image{
+                min-width: 350px;
             }
             .image img{
-                width: 300px;
-                height: 100%;
+                /* width: 300px;
+                height: 100%; */
                 margin-right: 0;
             }
             .products{
