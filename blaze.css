@@ -509,6 +509,53 @@
         .banner3 .banner-box3::after{
             background-image: url(./images/b52f9ce3-25e3-41e7-80bf-fbe2f05e8f0e.jpg);
         }
+        .newsLetter{
+            padding: 30px 100px;
+            flex-wrap: wrap;
+            background-color: #088178;
+            border: #fddde4 inset .5px;
+            color: #fff;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .newsLetter .newstext{
+            margin: 30px 0;
+        }
+        .newsLetter h4{
+            font-size: 22px;
+            font-weight: 700;
+            color: #ca9c9f;
+        }
+        .newsLetter p{
+            font-size: 14px;
+            font-weight: 600;
+            color: #030303;
+        }
+        .newsLetter p span{
+            color: #ca9c9f;
+        }
+        .newsLetter input{
+            padding: 15px;
+            font-size: 16px;
+            width: 300px;
+            border: none;
+            outline: none;
+            border-radius: 5px 0 0 5px;
+            background-color: whitesmoke;
+            color: #333;
+        }
+        .newsLetter input::placeholder{
+            color: #ca9c9f;
+        }
+        .newsLetter button{
+            background-color: #ca9c9f;
+            color: #088178;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            border-radius: 0 5px 5px 0;
+        }
+
 
 
 
