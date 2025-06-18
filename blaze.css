@@ -559,21 +559,26 @@
             background: rgb(38, 38, 66);
             position: relative;
             width:100%;
+            color: #fff;
         }
         footer .logo{
             height:80px;
             margin-bottom: 30px;
         }
+        footer a{
+            color: #fff;
+        }
         .footer-container{
             width: 100%;
-            border: solid #ca9c9f;
+            /* border: solid #ca9c9f; */
             display: flex;
             justify-content: center;
             gap: 1%;
             flex-wrap: wrap;
+            
         }
         .footer-container > *{
-            border: solid #ca9c9f ;
+            /* border: solid #ca9c9f ; */
             display: flex;
             /* flex-wrap: wrap; */
             flex-direction: column;
@@ -581,7 +586,15 @@
             margin-bottom: 20px;
             flex-basis: 200px;
             min-width: 300px;
+            gap: 10px;
         }
+        footer .row img{
+            height: 80px;
+            /* border: solid #088178; */
+            width: 120px;
+            height: 50px;
+        }
+
         
 
         
