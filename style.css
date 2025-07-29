@@ -618,6 +618,26 @@
             margin-top: 80px;
         }
 
+
+        /* shop page style */
+
+        .page-head{
+            background-image: url(./images/balenciaga.jpg);
+            width: 100%;
+            height:40vh;
+            filter: brightness(0.4);
+            background-position: 2px;
+            background-size: cover;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 10vh;
+            color: #fff;
+        }
+        .page-head h2{
+            text-decoration: overline;
+            text-transform: uppercase;
+        }
+
         
 
         

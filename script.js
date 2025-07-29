@@ -41,9 +41,16 @@ const headContent = `
 
 
         // current page link//
-    //     const links = document.querySelectorAll('#navbar a');
-    // const currentPath = Window.loction.pathname;
+        const links = document.querySelectorAll('#navbar a');
+    const currentPath = window.location.pathname;
 
-    // links.forEach(link => {
-    //     console.log(link.getAttribute('href'). currentPath);
-    // })
+    links.forEach(link => {
+        console.log(link.getAttribute('href'). currentPath);
+
+        if(link.getAttribute('href') === currentPath ||
+            currentPath.endsWith(link.getAttribute('href'))){
+                link.classList.add('active');
+            }else{
+                link.classList.remove('active');
+            }
+    });
