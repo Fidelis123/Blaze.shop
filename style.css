@@ -88,9 +88,7 @@
             display: none;
 
         }
-        header nav{
-             
-        }
+
         .Container{
             height: 90vh;
             display: flex;
@@ -244,7 +242,6 @@
             padding: 50px;
             color: #fff;
             background-color:  rgb(54, 90, 94);
-           
         }
         .featured h1{
             font-size: 40px;
@@ -266,11 +263,20 @@
             gap: 20px;
             flex-wrap: wrap;
             z-index: -1;
+            overflow-x: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+        .featured-box::-webkit-scrollbar {
+            display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+        }
+        .featured-box::-webkit-scrollbar-thumb {
+            background: #888; /* Color of the scrollbar thumb */
+            border-radius: 10px; /* Rounded corners for the scrollbar thumb */
         }
         .feat-box{
             width: 300px;
-            height: 380px;
-            background-color: #fff;
+            height: 340px;
+            background-color: rgb(35, 29, 48);
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             display: flex;
@@ -278,6 +284,9 @@
             align-items: center;
             padding: 20px;
             margin: 30px;
+            
+            
+            
         }
         .feat-box i{
             display: flex;
@@ -303,9 +312,11 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
             transform: translateY(-5px);
             transition: all 0.3s ease;
+            border: #fff 2px inset;
         }
-        .feat-box h3{
+        .feat-box span{
             font-size: 15 px;
+            
         }
         .zero{
             display: flex;
@@ -622,7 +633,7 @@
         /* shop page style */
 
         .page-head{
-            background-image: url(./images/balenciaga.jpg);
+            background-image: url(./images/balenciaga\ \(2\).jpg);
             width: 100%;
             height:40vh;
             filter: brightness(0.4);
@@ -638,7 +649,39 @@
             text-transform: uppercase;
         }
 
-        
+
+    /*contact page style */
+
+    .Conatct-details{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+        background-color: #088178;
+    }
+    .Conatct-details .details{
+        border: #fff inset;
+        width: 40%;
+        height: 50vh;
+        margin: 30px;
+        background-color: rgb(60, 31, 31);
+    }
+    .Conatct-details .details span{
+        font-size: 12px;
+        color: lightsalmon;
+    }
+    .Conatct-details .details h2{
+        font-size: 30px;
+        line-height: 35px;
+        padding: 20px 0;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    .Conatct-details .details h3{
+        font-size: 16px;
+        padding-bottom: 15px;
+        color: #fff;
+    }
 
         
 
