@@ -5,6 +5,8 @@
         button{
             cursor: pointer;
             font-weight: bold;
+            background-color: #fff;
+            color: rgb(54, 90, 94);
         }
         .flexCenter{
             display: flex;
@@ -284,9 +286,6 @@
             align-items: center;
             padding: 20px;
             margin: 30px;
-            
-            
-            
         }
         .feat-box i{
             display: flex;
@@ -664,7 +663,9 @@
         width: 40%;
         height: 50vh;
         margin: 30px;
-        background-color: rgb(60, 31, 31);
+        background-image: url(images/1aa948922470325ede97e375d4d54d45.jpg) ;
+        background-position: center;
+        filter: brightness(0.4) ;
     }
     .Conatct-details .details span{
         font-size: 12px;
@@ -682,8 +683,119 @@
         padding-bottom: 15px;
         color: #fff;
     }
+    .Conatct-details .details li{
+        display: flex;
+        padding: 5px 0;
+        gap: 10px;
+        color: #fff;
+    }
+    .Conatct-details .details i{
+        font-size: 14px;
+    }
+    .Conatct-details .details p{
+        font-size: 14px;
+    }
+    .Conatct-details .map{
+        border: #fff inset;
+        color: #888;
+        width: 40%;
+        height: 50n vh;
+        margin: 30px;
+        background-image: url(images/1aa948922470325ede97e375d4d54d45.jpg) ;
+        background-position: center;
+    }
+    .form-details{
+        display: flex;
+        flex-wrap: wrap;
+        /* padding: 0 px; */
+        align-items: center;
+        justify-content: space-between;
+        margin: 40px 40px;
+    }
+    .form-details form{
+        border: solid rgb(11, 11, 56);
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .form-details form input, .form-details form textarea{
+        width: 100%;
+        padding: 5px 10px;
+        outline: none;
+        margin-bottom: 20px;
+        border: solid rgb(11, 11, 56);
+        background-color: #ca9c9f;
+    }
+    .form-details form input::placeholder, .form-details form textarea{
+        color: black;
+    }
+
+    .form-details button{
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: #088178;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            transition: background-color 0.3s, color 0.3s;
+            box-shadow: 3px 3px 3px #333;
+            margin: 0 250px 10px;
+        }
+    .form-details button:hover{
+            background-color: #fff;
+            color: #088178;
+            box-shadow: 3px 3px 10px #ca9c9f;
+    }
+    .form-details .Management{
+            margin-top:30px ;
+            width: 40%;
+            border: solid;
+    }
+    .form-details .Management div{
+        margin: 10px 0;
+            padding-bottom: 25px;
+            display: flex; 
+            align-items: flex-start; 
+            gap: 10px;
+            flex-wrap: wrap;
+    }
+    .form-details .Management div img{
+            object-fit: cover;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: solid #ca9c9f;
+    }
+
+    .form-details .Management div p{
+        font-size: 13px;
+        line-height: 25px;
+    }
+    .form-details .Management div span{
+        font-weight: 600;
+        display: block;
+        font-size: 16px;
+
+    }
+
 
         
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -786,6 +898,35 @@
                 border-radius:  0 0  15px 15px;
             }
 
+            /* contact page*/
+            .Conatct-details .details{
+                height: auto;
+            }
+            .form-details{
+                height: auto;
+                display: flex;
+                flex-direction: column;
+            }
+            /* .form-details form input, .form-details form textarea{
+                outline: none;
+                margin-bottom: 20px;
+                border: solid rgb(11, 11, 56);
+                background-color: #ca9c9f;
+            } */
+
+            .form-details form{
+                border: solid rgb(11, 11, 56);
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            /* .form-details .Management div img{
+                align-items: center;
+            } */
+            .form-details button{
+                margin: auto;
+            }
             footer .logo{
                 height: 80px;
                 margin-bottom: 220px;

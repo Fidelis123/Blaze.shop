@@ -1,3 +1,4 @@
+
 const header = document.getElementById('header');
 // console.log(header);
 
@@ -78,7 +79,12 @@ const headContent = `
                 <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
             </div>
         `;
-        featured.insertAdjacentHTML("beforeend", featuredHtml);
+
+        if (featured == null) {
+            return;
+        }else{
+            featured.insertAdjacentHTML("beforeend", featuredHtml);
+        }
     }
 
         renderfeatured(
@@ -190,7 +196,7 @@ const headContent = `
 
         // Dynamics newsletter
     
-
+    document.addEventListener("DOMContentLoaded", function (){
     const newsLetter = document.getElementById("newsLetter"); 
     const newsText =`
         <div class="newstext">
@@ -262,4 +268,7 @@ const headContent = `
             <p>© 2025, the shopping app</p>
         </div>
     `;
-    footer.insertAdjacentHTML("beforeend", footerHtml);
+    if (footer) {
+        footer.insertAdjacentHTML("beforeend", footerHtml);
+    }
+    });
