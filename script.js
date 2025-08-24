@@ -40,7 +40,6 @@ const headContent = `
         nav.classList.remove('active');
     });
 
-
         // current page link//
         const links = document.querySelectorAll('#navbar a');
     const currentPath = window.location.pathname;
