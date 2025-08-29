@@ -55,6 +55,14 @@ const headContent = `
             }
     });
 
+    // head-page //
+    // const page = document.getElementById("page-head");
+
+    // const pageContent =`
+        
+    // `;
+    // page.innerHTML = pageContent;
+
     // dynamic products// 
     const featured = document.getElementById("featured");
 

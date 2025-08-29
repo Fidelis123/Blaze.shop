@@ -262,19 +262,29 @@
              border: #030303;
             justify-content: center;
             align-items: center;
-            gap: 20px;
-            flex-wrap: wrap;
+            gap: 20px; 
             z-index: -1;
             overflow-x: scroll;
+            overflow-y: hidden;
+            height: 400px;
+            width: 100%;
             -webkit-overflow-scrolling: touch;
         }
-        .featured-box::-webkit-scrollbar {
-            display: none; /* Hide scrollbar for Chrome, Safari and Opera */
-        }
-        .featured-box::-webkit-scrollbar-thumb {
-            background: #888; /* Color of the scrollbar thumb */
-            border-radius: 10px; /* Rounded corners for the scrollbar thumb */
-        }
+    
+      .featured-box::-webkit-scrollbar {
+    width: 8px;               /* Width of the scrollbar */
+}
+
+.featured-box::-webkit-scrollbar-track {
+         /* Light background for the track */
+    border-radius: 10px;      /* Rounded corners for the track */
+}
+
+.featured-box::-webkit-scrollbar-thumb {
+        /* Dark scrollbar thumb */
+    border-radius: 10px;      /* Rounded corners */
+}
+
         .feat-box{
             width: 300px;
             height: 340px;
@@ -830,67 +840,75 @@
     }
     .latest{
                 
-                align-items: center;
-                font: 50px;
-                width: 100%;
-                margin: 20px 0;
-                /* border: solid yellow; */
+        align-items: center;
+        font: 50px;
+        width: 100%;
+        margin: 20px 0;
+        border: solid yellow;
+        flex-wrap: wrap;
+        /* height: 100%; */
                 
-            }
-            .latest h1{
-                align-self: flex-start;
-                font-size: 50px;
-                margin: 40px ;
-            }
-            .latest span{
-                color: lightseagreen;
-            }
-            .latest-container h3{
-                align-self: center;
-                margin: 20px;
-                font-size: 30px;
-                width: 150px;
-                /* border: green solid; */
-                padding: 20px;
-            }
-            .latest-container p{
-                line-height: 30px ;
-            }
-            .latest-container a{
-                font-size: 15px;
-                font-weight: 800;
-                position: relative;
-                color:#088178;
-                transition: 0.3s ease;
-            }
-            .latest-container a:hover{
-                color: black;
-            }
-            .latest-container{
-                width: 70%;
-                margin: 20px auto;
-                /* border: solid red; */
-            }
-            .latest-container .latestnews{
-                height: 150px;
-                width: 100%;
-                margin-bottom: 20px;
-                
-            }
-            .latest-container .latestnews img{
-                width: 50%;
-                height: 150px;
-                margin: 80px;
-                border-radius: 10px;
-            }
-            .latest-blog .latestimg{
-                width: 50%;   
-            }
-    
+    }
+    .latest-update{
+        width: 70%;
+        margin: 20px auto;
+        border: #088178 solid;
+    }
+    .latest h1{
+        align-self: flex-start;
+        font-size: 50px;
+        margin: 40px ;
+    }
+    .latest span{
+        color: lightseagreen;
+    }
+    .latest-container h3{
+        align-self: center;
+        margin: 40px;
+        font-size: 30px;
+        width: 150px;
+        /* border: green solid; */
+    }
+    .latest-container p{
+        line-height: 30px ;
+    }
+    .latest-container a{
+        font-size: 15px;
+        font-weight: 800;
+        position: relative;
+        color:#088178;
+        transition: 0.3s ease;
+    }
+    .latest-container a:hover{
+        color: black;
+    }
+    .latest img{
+        height: 30%;
+        width: 80%;
+    }
+    .latest .latest-blog{
+        height: 150%;
+        width: 100%;
+        border: solid purple;
+        margin-bottom: 20px;
+    }
+    .latest .latest-container{
+        border: #ca9c9f solid;
+        height: 100%;
+        width: 80%;
+    }
+    .latest .latest-blog .latestnews{
+        /* display: flex; */
+        width: 100%;
+        height: 80%;
+        gap: 5%;
+        border: #088178 solid;        
+    }
+    .latest .latest-blog .latestnews img{
+        margin: 20px;
+    }
 
-    
-
-    /* #pagination{
+    #pagination{
         text-align: center;
         margin-top: 50px;
     }
@@ -903,8 +921,17 @@
         color: #fff;
         text-decoration: none;
         border-radius: 5px;
-    } */
+    }
 
+
+    /* ///// About page //// */
+
+    /* .Contactus{
+        display: flex;
+    }
+    .Contactus{
+
+    } */
 
 
 
