@@ -64,48 +64,43 @@ const headContent = `
     // page.innerHTML = pageContent;
 
     // dynamic products// 
-    const featured = document.getElementById("featured");
-
-    function renderfeatured(locationLink, imgsrc, size, name, price) {
-     
-        const featuredHtml = `
-        <div class="feat-box" onclick="${locationLink}">
-                <img src="${imgsrc}" alt="${name}">
-                <div class="imgunder">
-                    <span>${size}</span>
-                    <h5>${name}</h5>
-                    <div class="star">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star"></i>
-                    </div>
-                        <p>${price}</p>
-                </div>
-                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+function renderfeatured(locationLink, imgsrc, size, name, price) {
+    const div = document.createElement('div');
+    div.classList.add('feat-box');
+    div.innerHTML = `
+        <img src="${imgsrc}" alt="${name}">
+        <div class="imgunder">
+            <span>${size}</span>
+            <h5>${name}</h5>
+            <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
             </div>
-        `;
-
-        if (featured == null) {
-            return;
-        }else{
-            featured.insertAdjacentHTML("beforeend", featuredHtml);
-        }
+            <p>${price}</p>
+        </div>
+        <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+    `;
+    div.addEventListener('click', () => {
+        window.location.href = locationLink;
+    });
+    featured.appendChild(div);
     }
-
+    
         renderfeatured(
             "window.location.href='sfeatures.html';",
             "./images/d7136c6c-65c3-4f44-aaf1-c13e2ec9beb9.jpg",
-            "small size",
-            "meat pie",
+            "Mens hand bag purse",
+            "Mens purse",
             "₦20,000"
         );
 
 
         renderfeatured(
             "window.location.href='sfeatures.html';",
-            "./images/d7136c6c-65c3-4f44-aaf1-c13e2ec9beb9.jpg",
+            "./images/Desire tees .jpg",
             "Medium size",
             "meat pie",
             "₦20,000"
@@ -114,16 +109,16 @@ const headContent = `
 
         renderfeatured(
             "window.location.href='sfeatures.html';",
-            "./images/d7136c6c-65c3-4f44-aaf1-c13e2ec9beb9.jpg",
+            "./images/slippers.jpg",
             "Large size",
-            "meat pie",
-            "₦20,000"
+            "plantain",
+            "5k"
         );
 
 
         renderfeatured(
             "window.location.href='sfeatures.html';",
-            "./images/d7136c6c-65c3-4f44-aaf1-c13e2ec9beb9.jpg",
+            "./images/Shape_ Slim,Regular,Loose Button_ Single Breasted….jpg",
             "small size",
             "meat pie",
             "₦20,000"
@@ -132,7 +127,7 @@ const headContent = `
 
         renderfeatured(
             "window.location.href='sfeatures.html';",
-            "./images/d7136c6c-65c3-4f44-aaf1-c13e2ec9beb9.jpg",
+            "./images/red beads.jpg",
             "small size",
             "meat pie",
             "₦20,000"
@@ -141,7 +136,7 @@ const headContent = `
 
         renderfeatured(
             "window.location.href='sfeatures.html';",
-            "./images/d7136c6c-65c3-4f44-aaf1-c13e2ec9beb9.jpg",
+            "./images/Red cap.jpeg",
             "small size",
             "meat pie",
             "₦20,000"
@@ -150,7 +145,43 @@ const headContent = `
 
         renderfeatured(
             "window.location.href='sfeatures.html';",
-            "./images/d7136c6c-65c3-4f44-aaf1-c13e2ec9beb9.jpg",
+            "./images/better gucci shoe.jpg",
+            "small size",
+            "meat pie",
+            "₦20,000"
+        );
+
+
+         renderfeatured(
+            "window.location.href='sfeatures.html';",
+            "./images/L v.jpg",
+            "small size",
+            "meat pie",
+            "₦20,000"
+        );
+
+
+         renderfeatured(
+            "window.location.href='sfeatures.html';",
+            "./images/white vintage.jpg",
+            "small size",
+            "meat pie",
+            "₦20,000"
+        );
+
+
+         renderfeatured(
+            "window.location.href='sfeatures.html';",
+            "images/kitted tee.jpg",
+            "small size",
+            "meat pie",
+            "₦20,000"
+        );
+
+
+         renderfeatured(
+            "window.location.href='sfeatures.html';",
+            "./images/glasses.jpg",
             "small size",
             "meat pie",
             "₦20,000"
@@ -165,41 +196,10 @@ const headContent = `
             "₦20,000"
         );
 
+        //featured scroll
 
-         renderfeatured(
-            "window.location.href='sfeatures.html';",
-            "./images/d7136c6c-65c3-4f44-aaf1-c13e2ec9beb9.jpg",
-            "small size",
-            "meat pie",
-            "₦20,000"
-        );
-
-
-         renderfeatured(
-            "window.location.href='sfeatures.html';",
-            "./images/d7136c6c-65c3-4f44-aaf1-c13e2ec9beb9.jpg",
-            "small size",
-            "meat pie",
-            "₦20,000"
-        );
-
-
-         renderfeatured(
-            "window.location.href='sfeatures.html';",
-            "./images/d7136c6c-65c3-4f44-aaf1-c13e2ec9beb9.jpg",
-            "small size",
-            "meat pie",
-            "₦20,000"
-        );
-
-
-         renderfeatured(
-            "window.location.href='sfeatures.html';",
-            "./images/d7136c6c-65c3-4f44-aaf1-c13e2ec9beb9.jpg",
-            "small size",
-            "meat pie",
-            "₦20,000"
-        );
+            
+            
 
         // Dynamics newsletter
     

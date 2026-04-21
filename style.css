@@ -28,8 +28,6 @@
             height: 10vh;
             background-color: #fff;
             display: flex;
-            /* justify-content: space-between; */
-            /* align-items: center; */
             padding: 0 20px;
             z-index: 1000;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -55,7 +53,6 @@
             border: solid #ca9c9f;
         }
         .navbar{
-            /* display: flex; */
             gap: 20px;
             list-style: none;
             margin-right: 10vh;
@@ -252,6 +249,31 @@
         .featured p{
             text-transform: capitalize;
         }
+        /* .scroll-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        background-color: rgba(255, 255, 255, 0.9);
+        border: none;
+        border-radius: 50%;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .scroll-btn:hover {
+      background-color: #e9ecef;
+    }
+
+    #featured1-scrollLeft {
+      left: 0.5rem;
+    }
+
+    #featured1-scrollRight {
+      right: 0.5rem;
+    }  */
         .feat-box .imgunder{
             padding: 10px;
             align-items: start;
@@ -259,12 +281,13 @@
         }
         .featured-box{
             display: flex;
-             border: #030303;
-            justify-content: center;
+             /* border:1px solid #030303; */
+            justify-content: flex-start;
+            flex-wrap: nowrap;
             align-items: center;
             gap: 20px; 
-            z-index: -1;
-            overflow-x: scroll;
+            z-index: 1;
+            overflow-x: auto;
             overflow-y: hidden;
             height: 400px;
             width: 100%;
@@ -272,21 +295,28 @@
         }
     
       .featured-box::-webkit-scrollbar {
-    width: 8px;               /* Width of the scrollbar */
+    width: 8px;
+    height: 10px;      /* Width of the scrollbar */
 }
 
 .featured-box::-webkit-scrollbar-track {
          /* Light background for the track */
-    border-radius: 10px;      /* Rounded corners for the track */
+         background: #f1f1f1;
+        border-radius: 10px;      
 }
 
 .featured-box::-webkit-scrollbar-thumb {
         /* Dark scrollbar thumb */
-    border-radius: 10px;      /* Rounded corners */
+        background: rgb(35, 29, 48);
+    border-radius: 10px;
+}
+.featured-box::-webkit-scrollbar-thumb:hover{
+    background: #333;
 }
 
         .feat-box{
             width: 300px;
+            min-width: 300px;
             height: 340px;
             background-color: rgb(35, 29, 48);
             border-radius: 10px;
@@ -524,7 +554,7 @@
         }
         .banner3 .banner-box::after{
             content:"";
-            background-image: url(./images/cca7065f-3ef5-45d0-aba6-ccd5ed3d5b81.jpg);
+            background-image: url(./images/sweaterone.jpg);
             width: 100%;height: 100%;
             background-size: cover;
             background-position: center;
@@ -844,7 +874,7 @@
         font: 50px;
         width: 100%;
         margin: 20px 0;
-        border: solid yellow;
+        border: outset;
         flex-wrap: wrap;
         /* height: 100%; */
                 
@@ -852,7 +882,7 @@
     .latest-update{
         width: 70%;
         margin: 20px auto;
-        border: #088178 solid;
+        border: #088178 inset;
     }
     .latest h1{
         align-self: flex-start;
@@ -885,15 +915,16 @@
     .latest img{
         height: 30%;
         width: 80%;
+        
     }
     .latest .latest-blog{
         height: 150%;
         width: 100%;
-        border: solid purple;
+        border: inset ;
         margin-bottom: 20px;
     }
     .latest .latest-container{
-        border: #ca9c9f solid;
+        /* border: #ca9c9f solid; */
         height: 100%;
         width: 80%;
     }
@@ -902,7 +933,7 @@
         width: 100%;
         height: 80%;
         gap: 5%;
-        border: #088178 solid;        
+        /* border: #088178 solid;         */
     }
     .latest .latest-blog .latestnews img{
         margin: 20px;
@@ -926,12 +957,112 @@
 
     /* ///// About page //// */
 
-    /* .Contactus{
-        display: flex;
-    }
     .Contactus{
+        margin: 50px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .Contactus .Contactus-writeup{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .Contactus .Contactus-writeup h1{
+        font-size: 40px;
+    }
+    .Contactus-container{
+        /* border: #088178 solid; */
+        margin: 30px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 
-    } */
+    .Contactus-details{
+        flex-direction: column;
+        align-items: center;
+        /* border: #ca9c9f solid; */
+        color: #fff;
+        width: 30vh;
+        height: 10vh;
+        background-color: rgb(35, 29, 48);
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .Contactus .Contactus-details i{
+        align-self: center;
+        flex-direction: column;
+        /* border: #ca9c9f solid; */
+    }
+    .Contactus .Contactus-details a{
+        font-size: 15px;
+        color: #fff;
+        margin-top: 10px;
+        box-sizing: border-box;
+    }
+    .Contactus .Contactus-details h5{
+        font-size: 20px;
+    }
+    .Contactus .Contactus-details p{
+        font-size: 15px;
+    }
+
+    .About{
+        border: #ca9c9f solid;
+        background-color: #088178;
+    }
+    .About .About-details{
+        flex-wrap: wrap;
+        border: #fff inset;
+        gap: 10px;
+    }
+    .About .About-details .About-ourstory{
+        flex-direction: column;
+        align-items: flex-start;
+        border: #ca9c9f outset ;
+        width: 45%;
+        margin: 20px;
+    }
+    .About .About-details .About-ourstory h1{
+        margin: 20px;
+        font-size: 50px;
+        font-weight: bold;
+        color: #ca9c9f;
+    }
+    .About .About-details .About-ourstory span{
+        color: #fff;
+    }
+    .About .About-details .About-ourstory p{
+        line-height: 30px;
+    }
+    .About .About-details{
+        margin: 55px;
+    }
+    .About img{
+        /* align-self: flex-end; */
+        width: 450px;
+        height: 550px;
+        border: #ca9c9f inset;
+        margin: 20px;
+        border-radius: 15px;
+    }
+    .About button{
+        margin: 30px;
+        padding: 10px 20px;
+        font-size: 20px;
+        background-color: navy;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        transition: background-color 0.3s, color 0.3s;
+        box-shadow: 3px 3px 3px #333;
+    }
+    .About button:hover{
+            background-color: #fff;
+            color: #088178;
+            box-shadow: 3px 3px 10px #ca9c9f;
+    }
 
 
 
@@ -1037,14 +1168,30 @@
                 margin-right: 0;
                 margin-bottom: 30px;
             } */
-            .products{
+            .products, .Contactus-container, .About .About-details{
                 justify-content: center;
                 padding: 0 5%;
+            }
+            .featured-box h1{
+                
             }
             .featured-cont{
                 justify-content: center;
                 padding: 0 5%;
             }
+            .banner{
+                height: auto;
+            }
+            .banner h5{
+                font-size: 40px;
+            }
+            .banner h3{
+                font-size: 25px;
+            }
+            .banner button{
+                margin-bottom: 5px;
+            }
+
             .newsLetter {
                 flex-direction: column;
                 align-items: center;
@@ -1066,6 +1213,12 @@
             /* contact page*/
             .Conatct-details .details{
                 height: auto;
+            }
+            .Contactus .Contactus-writeup h1{
+                font-size: 35px;
+            }
+            .Contactus .Contactus-writeup p{
+                font-size: 15px;
             }
             .form-details{
                 height: auto;
@@ -1114,6 +1267,10 @@
             }
             .latest{
                 flex-wrap: wrap;
+                border: none;
+            }
+            .latest-update{
+                
             }
             .latest .latestimg img{
                 width: 50%;
@@ -1128,6 +1285,18 @@
                 flex-wrap: wrap;
                 /* gap: 30px; */
             }
+            .About .About-details .About-ourstory h1{
+                font-size: 30px;
+            }
+            .About .About-details .About-ourstory{
+                width: 100%;
+                height: auto;
+            }
+            .About .About-details img{
+                width: 300px;
+                height: auto;
+            }
+            
             /* .latest .latest-blog{
                 justify-content: space-between;
                 border: #030303 solid;
