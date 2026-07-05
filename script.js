@@ -226,7 +226,7 @@ function renderfeatured(locationLink, imgsrc, size, name, price) {
                 style="position: absolute; bottom: -1px;border-radius: 50%;border: #ca9c9f solid;">
                 <h4 style="text-decoration: underline;">Contact</h4>
 
-                <p> <strong>Address:</strong>no.3b hhatchery road Nkaliki</p>
+                <p> <strong>Address:</strong>Nigera</p>
                 <p> <strong>phone:</strong> +2348103628432</p>
                 <p> <strong>hours:</strong>10:00 - 18:00, Mon - Sat</p>
                 <div class="follow">
@@ -264,8 +264,8 @@ function renderfeatured(locationLink, imgsrc, size, name, price) {
                 <h4>Install App</h4>
                 <p>From App Store or Google play</p>
                 <div class="row">
-                    <img src="./c63de450df4c84bc4f7d1b0a762d8d56.jpg" alt="">
-                    <img src="./f37da494b60e3b7ed6e3e08a1ddba2fa.jpg" alt="">
+                    <img src="./images/c63de450df4c84bc4f7d1b0a762d8d56.jpg" alt="">
+                    <img src="./images/f37da494b60e3b7ed6e3e08a1ddba2fa.jpg" alt="">
                 </div>
                 <p>Secure payment gateway</p>             
             </div>
